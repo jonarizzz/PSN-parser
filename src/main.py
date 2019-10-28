@@ -17,4 +17,8 @@ for i in range(length):
     element_type = full_list[i]['type']
     if element_type == 'game':
         game_name = element['attributes']['name']
+        long_desc = element['attributes']['long-description']
+        # TODO: sort by popular (genre + popularity mb),
+        #  cut off all pre-orders 
         print(game_name)
+        print(long_desc)
