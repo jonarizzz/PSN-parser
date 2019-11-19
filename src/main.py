@@ -18,7 +18,7 @@ for i in range(len(full_list)):
     element = full_list[i]
     element_type = full_list[i]['type']
 
-    if element_type == 'game':
+    if element_type == 'game' and element['attributes']['skus'][0]['is-preorder'] == False:
         game_name = element['attributes']['name']
 
-        print(i, game_name, element['attributes']['skus'][0]['is-preorder'])
+        print(i, game_name)
